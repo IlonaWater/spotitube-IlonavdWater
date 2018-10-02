@@ -1,10 +1,18 @@
 package nl.oose.dea;
 
-/**
- * Hello world!
- */
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+@Path("/")
 public class App {
+
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+    }
+
+    @GET
+    @Produces("text/plain")
+    public String re() {
+        return "Hello, world!";
     }
 }
