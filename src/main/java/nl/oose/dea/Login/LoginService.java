@@ -1,25 +1,18 @@
 package nl.oose.dea.Login;
 
+import nl.oose.dea.Account;
+import nl.oose.dea.UserToken;
+
+import javax.security.auth.login.LoginException;
+
 public class LoginService {
 
 
-//    private String user = "donkey";
-//    private String password = "cabbage";
-//    private Account account = new Account();
-//
-//    public void checkLogin() {
-//        if (user.equals(account.getUser()) && password.equals(account.getPassword())){
-//            UserToken token = new UserToken(user, "1234-1234-1234");
-//            return token;
-//        }
-//
-//    }
-
-    //if get user
-    //checkLogin
-    //generateToken
-
-    //else
-    //throw exception
+    public UserToken login(Account account) throws LoginException {
+        if ("donkey".equals(account.getUser()) && "cabbage".equals(account.getPassword())) {
+            UserToken token = new UserToken("Donkey Cabbage", "1234-1234-1234");
+            return token;
+        } else throw new LoginException("Unvalid user information.");
+    }
 
 }
