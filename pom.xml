@@ -32,6 +32,13 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxrs -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>3.2.6</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -77,4 +84,13 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <!--<filter>-->
+    <!--<filter-name>CorsFilter</filter-name>-->
+    <!--<filter-class>org.apache.catalina.filters.CorsFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+    <!--<filter-name>CorsFilter</filter-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
 </project>
